@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>3D в AR</title>
+    <script src="https://unpkg.com/@google/model-viewer"></script>
+    <style>
+        body { margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background: #111; }
+        model-viewer { width: 100vw; height: 100vh; }
+    </style>
+</head>
+<body>
+
+<!-- 3D-модель с AR -->
+<model-viewer 
+    src="model.glb" 
+    ar 
+    ar-modes="webxr scene-viewer quick-look" 
+    auto-rotate 
+    camera-controls 
+    environment-image="neutral">
+</model-viewer>
+
+</body>
+</html>
